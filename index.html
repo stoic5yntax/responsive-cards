@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive product cards</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="product">
+      <picture class="product_img">
+        <source srcset="./images/perfume01.avif" media="(min-width:700px)" />
+        <img src="./images/perfume02.avif" alt="" />
+      </picture>
+
+      <div class="product_content">
+        <p class="product_category">Perfume</p>
+
+        <h1 class="product_title">Armani Privé: The Epitome of Elegance</h1>
+
+        <p class="product_desc">
+          Discover Armani Privé, where luxury meets sophistication. Each
+          fragrance is crafted with the finest ingredients to create a unique
+          and timeless scent. Elevate your presence with a perfume that’s more
+          than a fragrance—it's an olfactory masterpiece.
+        </p>
+
+        <div class="flex-group">
+          <p class="product_price">
+            <span class="visually-hidden"> Original price: </span>
+            $149.99
+          </p>
+          <p class="product_original-price">
+            <span class="visually-hidden"> Original price: </span>
+            <s> $169.99 </s>
+          </p>
+        </div>
+
+        <button class="button" data-icon="cart">Add to cart</button>
+      </div>
+    </article>
+  </body>
+</html>
